@@ -13,5 +13,6 @@ judge-tier2:
 
 judge-tier3:
 	cd tier3 && docker build --build-arg TAG="${GIT_TAG}" -t dmoj/judge-tier3 -t dmoj/judge-tier3:$(TAG) .
+
 judge-melytier:
-	cd melytier && docker build --build-arg TAG="${GIT_TAG}" -t dmoj/judge-tier1 -t dmoj/judge-tier1:$(TAG) .
+	cd melytier && docker build --build-arg TAG="${GIT_TAG}" -t melyoj/judge-melytier -t melyoj/judge-melytier:$(TAG) .
